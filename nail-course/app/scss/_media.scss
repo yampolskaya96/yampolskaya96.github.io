@@ -1,0 +1,315 @@
+@media(max-width: 1190px){
+    .gallery__item{
+        width: 50%;
+    }
+}
+@media(max-width: 1060px){
+    .about__text{
+        &::before{
+            width: 300px;
+        }
+    }   
+    .type-connection{
+        label{
+            padding-left: 5px;
+        }
+    }
+    .menu__list{
+        padding: 20px 26px;
+    }
+}
+@media(max-width: 990px){
+    .type-connection{
+        text-align: left;
+        flex-direction: column;
+    }
+    .menu__list{
+        padding: 20px 10px;
+    }
+    
+        #main-form{
+            button{
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+                padding: 15px 5px;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    
+}
+
+@media(max-width: 960px){
+    .menu__list{
+        justify-content: space-around;
+    }
+    .menu__list-item{
+        &:nth-child(1), &:nth-child(4){
+            display: none;
+        }
+    }
+    .about__img{
+        width: 50%;
+        height: 400px;
+    }
+    .about__text{
+        padding-right: 28px;
+    }
+    .main-screen__text{
+        width: 80%;
+        &::before{
+            width: 180px;
+        }
+    }
+    .main-screen__title {
+        padding: 36px 17px 36px 19px;;
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+@media (max-width: 850px){
+    .container{
+        padding: 0 20px;
+    }
+    .main-screen{
+        height: calc(var(--vh, 1vh) * 100);
+        &__img{
+            height: inherit;
+        }
+        &__title{
+            padding: 25px;
+            margin-top: 120px;
+            &::before{
+                top: 170px;
+            }
+        }
+    }
+    .scroll-arrow{
+        right: 20%;
+    }
+    .entry__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .entry__info{
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+        padding-top: 0;
+    }
+    #main-form{
+        order: 2;
+        width: 70%;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .programme__text{
+        padding-right: 30px;
+        margin-left: 70px;
+    }
+}
+@media (max-width: 780px){
+    .about{
+        padding: 30px 0;
+    }
+    .about__wrapper{
+        display: block;
+    }
+    .about__img{
+        display: none;
+    }
+    .about__text{
+        padding: 60px 30px 30px;
+        margin: 0;
+        max-width: 100%;
+        &::before{
+            top: 21px;
+        }
+    }
+}
+@media (max-width: 690px){
+    .main-screen__text{
+        width: 100%;
+        &::before{
+            width: 50%;
+        }
+    }
+    .price__content{
+        flex-direction: column;
+        margin-bottom: 50px;
+        &-box{
+            width: 100%;
+            padding-bottom: 30px;
+        }
+    }
+    .price__num{
+        font-size: 58px;
+        line-height: 58px;
+    }
+    #main-form{
+        width: 80%;
+        button{
+            width: 100%;
+        }
+    }
+    nav{
+        overflow-x: scroll;
+    }
+    .menu__list{
+        width: 700px;
+    }
+}
+@media (max-width: 670px){
+    .price__num{
+        font-size: 48px;
+        line-height: 48px;;
+    } 
+    #main-form{
+        width: 100%;
+        textarea{
+            height: 162px;
+        }
+    }
+    .programme__list-item{
+        padding: 10px 0;
+    }
+    .date__info{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .main-screen__img{
+        width: 75%;
+    }
+    .main-screen__right{
+        width: 410px;
+    }
+    .main-screen__title{
+        font-size: 22px;
+    }
+    .scroll-arrow{
+        transform: scale(0);
+    }
+    .price__num{
+        font-size: 40px;
+        line-height: 40px;;
+    } 
+    .price__content-text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .price{
+        .title{
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 530px){
+    #main-form{
+        padding: 0;
+    }
+    .programme__text{
+        margin-left: 20px;
+        padding-right: 15px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .price__info{
+        flex-direction: column;
+        height: 100px;
+    }
+    .price__content{
+        margin-bottom: 35px;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        &-text{
+            padding-top: 7px;
+        }
+    }
+    .entry__info{
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0;
+    }
+    .about__text{
+        p{
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+    }
+
+}
+@media (max-width: 470px){
+    .main-screen{
+        height: calc(var(--vh, 1vh) * 100);
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__title{
+            margin: 0;
+            &::before{
+                display: none;
+            }
+        }
+    }
+    .main-screen__img{
+        width: 100%;
+        height: 70%;
+        display: block;
+    }
+    .main-screen__right{
+        justify-content: flex-end;
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 100);
+        padding: 0;
+        position: relative;
+    }
+    .main-screen__text{
+        position: absolute;
+        top: 0;
+        padding-right: 10px;
+        color:black;
+        &::before{
+            width: 150px;
+            height: 4px;
+            background-color: rgba($title-elements, .5);
+        }
+    }
+    .about__text{
+        &::before{
+            background-color: rgba($title-elements, .5);
+        }
+    }
+    .socials{
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        height: fit-content;
+        padding: 20px 80px;
+        img + img{
+            margin-top: 0;
+        }
+    }
+    .main-socials{
+        background-color:#fff0ea;
+    }
+    .menu__list{
+        background-color: $title-elements;
+        color: #F3D7CA;
+        
+    }
+    .menu__list-item{
+        &::before, &:hover{
+            color: #fff;
+        }
+    }
+}
