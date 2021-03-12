@@ -1,0 +1,108 @@
+.catalog{
+    margin-bottom: 100px;
+}
+.catalog__title{
+    font-size: 30px;
+    line-height: 36px;
+    @extend %pro-bold;
+    margin-bottom: 26px;
+}
+.catalog__filter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.catalog__filter-items{
+    button{
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $background-color;
+        color: $grey-2;
+        border-radius: 3px;
+        padding: 5px 22px;
+    }
+    button + button{
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}
+button.catalog__filter-item--active{
+    background-color: $light-white;
+}
+.catalog__filter-btn{
+    button{
+        background-color: transparent;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+    button + button{
+        margin-left: 10px;
+    }
+}
+.catalog__inner{
+    display: flex;
+}
+.catalog__inner-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product-item__wrapper{
+        margin-bottom: 30px;
+    }
+}
+.catalog__inner-aside{
+    min-width: 290px;
+    margin-right: 22px;
+}
+.catalog__filter-btngrid{
+    width: 26px;
+    height: 20px;
+}
+.catalog__filter-btnline{
+    width: 25px;
+    height: 20px;
+}
+.catalog__filter-button{
+    opacity: 0.3;
+}
+.catalog__filter-button--active{
+    opacity: 1;
+}
+
+.catalog__filter-btn{
+    display: flex;
+    align-items: center;
+}
+.select-item{
+    border: 1px solid $orange-active;
+    margin-right: 34px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 6px 15px 6px 15px;
+}
+.pagination{
+    width: 100%;
+    margin-top: 70px;
+}
+.pagination-list{
+    display: flex;
+    justify-content: center;
+}
+.pagination-list__item{
+    padding: 6px 14px;
+    border: 2px solid transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: $orange-active;
+    margin: 0 6px;
+    @extend %barlow-regular;
+    a{
+        display: block;
+    }
+}
+.pagination-list__item--active{
+    color: $second-color;
+    border: 2px solid $second-color;
+    @extend %barlow-bold;
+}

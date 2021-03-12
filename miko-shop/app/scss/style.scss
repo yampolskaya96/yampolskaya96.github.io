@@ -1,0 +1,122 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/slick-carousel/slick/slick";
+
+@import "../css/jquery.formstyler.theme";
+@import "../css/jquery.formstyler";
+@import "../css/jquery.rateyo.min";
+@import "../css/ion.rangeSlider.min";
+
+
+
+
+
+@import 'vars';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'forms';
+@import 'tabs';
+
+@import 'breadcrumbs';
+@import 'banner-section';
+@import 'search';
+@import 'categories';
+@import 'products';
+@import 'product-item';
+@import 'catalog';
+@import 'aside';
+@import 'product-page';
+@import 'card-tabs';
+@import 'plus-pages';
+
+
+html{
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+body{
+    color: $main-text;
+    @extend %pro-regular;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: $page-color;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dark-bg{
+    background-color: rgba( black, .7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 90;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.dark-bg--active{
+    display: block;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-section{
+    margin-bottom: 80px;
+}
+.body-overflow{
+    overflow: hidden;
+}
+
+.title{
+    @extend %barlow-bold;
+    line-height: 30px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.products__tabs{
+    margin-bottom: 25px;
+}
+.products__tab{
+    padding-bottom: 10px;
+}
+
+.products__tab.tab--active{
+    border-bottom: 3px solid $active-color;
+}
+
+.products__tab + .products__tab{
+    margin-left: 50px;
+}
+
+
+@import 'media';

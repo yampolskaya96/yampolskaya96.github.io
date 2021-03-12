@@ -1,0 +1,31 @@
+.breadcrumbs{
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+.breadcrumbs__list{
+    position: relative;
+}
+
+.breadcrumbs__list-item{
+    display: inline-block;
+    padding-right: 18px;
+    margin-right: 8px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $second-color;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        background-image: url('../images/arrow-right-green.svg');
+        width: 6px;
+        height: 11px;
+        bottom: 4px;
+    }
+    &:last-child{
+        &::after{
+            display: none;
+        }
+    }
+}
