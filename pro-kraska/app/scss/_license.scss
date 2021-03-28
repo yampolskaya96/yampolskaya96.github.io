@@ -1,0 +1,60 @@
+.license{
+    background-image: url(../images/certificate-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0 20px;
+    text-align: center;
+}
+.license__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 60px 0 20px;
+}
+.license-info{
+    text-align: left;
+    max-width: 558px;
+    font-size: 24px;
+    line-height: 29px;
+    span{
+        color: $yellow;
+    }
+}
+.license-info__text + .license-info__text{
+    margin-top: 20px;
+}
+.license-info__img{
+    margin-top: 10px;
+}
+.license-certificate{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 560px;
+}
+.license__img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 446px;
+}
+.certificate-img{
+    width: 258px;
+    height: 373px; 
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.license__img-text{
+    background-color: $yellow;
+    max-height: 73px;
+    padding: 22px 5px;
+    font-size: 24px;
+    line-height: 29px;
+    @extend %mont-semibold;
+    width: 100%;
+}

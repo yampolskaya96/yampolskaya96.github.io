@@ -1,0 +1,18 @@
+.service__list{
+    text-align: left;
+    margin-top: 55px;
+}
+.service__list-item + .service__list-item{
+    margin-top: 25px;
+}
+.service__list-item{
+    min-height: 70px;
+    border-left: 2px solid $yellow;
+    padding: 0 25px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.service__item-text{
+    padding-top: 7px;
+}

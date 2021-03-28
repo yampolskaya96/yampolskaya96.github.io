@@ -1,0 +1,53 @@
+.works{
+    background-color: #F8F4F4;
+    padding-bottom: 140px;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        background-image: url(../images/kaska.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 354px;
+        height: 350px;
+        right: 0;
+        bottom: 0;
+    }
+}
+.works__list{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+.works__list-item{
+    width: 50%;
+    padding: 0 80px 50px 50px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 5px solid $yellow;
+        top: 2px;
+        left: 0;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $yellow;
+        border-radius: 50%;
+        top: 12px;
+        left: 10px;
+    }
+}
+.works__list-text{
+    margin-top: 12px;
+}

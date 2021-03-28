@@ -1,0 +1,102 @@
+.contact-phone{
+    padding-left: 28px;
+    position: relative;
+    @extend %mont-extrabold;
+    &::before{
+        content:'';
+        position: absolute;
+        width: 26px;
+        height: 27px;
+        background-image: url(../images/phone-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+        top: -3px;
+    }
+}
+h1{
+    @extend %mont-bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+}
+
+/* .section-wrap{
+    margin: 80px 0;
+    text-align: center;
+} */
+.btn{
+    @extend %mont-extrabold;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: $green;
+    min-height: 65px;
+    padding: 22px;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+        background-color: black;
+        box-shadow: 0px 0px 27px rgba(255, 255, 255, 0.3);
+    }
+}
+.text-white{
+    color: #fff;
+}
+.section-subtitle{
+    @extend %mont-extrabold;
+    font-size: 22px;
+    line-height: 27px;
+    color: $yellow-transparent;
+}
+.section-title{
+    @extend %mont-extrabold;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 37px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 336px;
+        height: 1px;
+        background-color: $yellow-transparent;
+        bottom: -12px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $yellow;
+        border-radius: 50%;
+        bottom: -17px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+.item-title{
+    @extend %mont-bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+.descr-title{
+    @extend %mont-semibold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.mail-address{
+    padding-right: 20px;
+    position: relative;
+    &::after{
+        content:'';
+        position: absolute;
+        width: 17px;
+        height: 12px;
+        background-image: url(../images/mail-icon.svg);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 4px;
+    }
+}

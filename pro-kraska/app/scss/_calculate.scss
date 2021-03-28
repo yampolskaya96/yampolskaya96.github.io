@@ -1,0 +1,120 @@
+.calculate{
+    text-align: center;
+    background-color: #1F1F1F;
+    padding: 60px 0 220px;
+}
+#calculate-form{
+    position: relative;
+}
+.calculate__title{
+    &::before{
+        background-color: $green;
+    }
+    &::after{
+        display: none;
+    }
+}
+.calculate__text{
+    max-width: 554px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 55px;
+}
+.form__item{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    @extend %mont-semibold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    input{
+        display: block;
+        width: 304px;
+        height: 45px;
+        background-color: #fff;
+        opacity: 0.5;
+        backdrop-filter: blur(15px);
+        bottom: none;
+        padding: 12px 23px;
+        &:active,
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.jq-selectbox__select-text,
+.jq-selectbox li,
+input::placeholder{
+    @extend %mont-semibold;
+    font-size: 13px;
+    line-height: 16px;
+}
+.form-btn{
+    min-width: 202px;
+    margin-top: 50px;
+    height: 45px;
+    padding: 12px 45px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.jq-selectbox__select{
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background-color: #fff;
+    width: 304px;
+    opacity: 0.5;
+    backdrop-filter: blur(15px);
+    bottom: none;
+    padding: 12px 23px;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    &:active,
+    &:hover,
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+
+.jq-selectbox__select-text{
+    width: 100%;
+    text-align: left;
+}
+.jq-selectbox__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    border-left: none;
+}
+.jq-selectbox__trigger-arrow{
+    top: 21px;
+    right: 18px;
+}
+.jq-selectbox__dropdown{
+    border: none;
+}
+.jq-selectbox li.selected {
+    background-color: $green;
+    color: #FFF;
+}
+.jq-selectbox li {
+    min-height: 18px;
+    padding: 8px 10px;
+    background-color: rgb(49, 49, 49);
+    color: #ffff;
+    &:hover{
+        background-color: $green;
+    }
+}

@@ -1,0 +1,38 @@
+.equipment{
+    padding: 80px 0;
+    background-image: url(../images/equipment-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.equipment__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.equipment__item{
+    margin: 0 64px;
+    width: 455px;
+    min-height: 475px;
+    display: flex;
+    flex-direction: column;
+}
+.equipment__img{
+    width: 100%;
+    /* height: 342px; */
+    margin-bottom: 37px;
+    img{
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+    }
+}
+.equipment__text{
+    font-size: 20px;
+    line-height: 24px;
+    span{
+        @extend %mont-bold;
+        color: $yellow;
+    }
+}

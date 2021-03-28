@@ -1,0 +1,24 @@
+.main{
+    min-height: 766px;
+    background-image: url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 50px 220px;
+    color: #fff;
+    text-align: left;
+}
+.main__title{
+    max-width: 750px;
+    text-shadow: $yellow 1px 1px 0, $yellow -1px -1px 0, $yellow -1px 1px 0, $yellow 1px -1px 0;
+    span{
+        color: $yellow;
+    }
+}
+.main__subtitle{
+    @extend %mont-semibold;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 19px 0 44px;
+}
