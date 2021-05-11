@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /politica.php
+Sitemap: https://onglass.moscow/sitemap.xml
